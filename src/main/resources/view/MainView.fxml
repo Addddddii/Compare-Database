@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.web.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="850.0" prefWidth="995.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.compare_db.controller.MainController">
+    <children>
+        <Label layoutX="484.0" layoutY="14.0" text="类型" />
+        <ComboBox fx:id="type" layoutX="446.0" layoutY="42.0" prefHeight="25.0" prefWidth="100.0" onAction="#onChange"/>
+        <Button fx:id="relatively" layoutX="453.0" layoutY="134.0" mnemonicParsing="false" onAction="#doCompare" prefHeight="81.0" prefWidth="86.0" text="比较" />
+        <Pane fx:id="left" layoutX="10.0" layoutY="8.0" prefHeight="300.0" prefWidth="390.0" style="-fx-border-color: #D8BFD8;">
+        </Pane>
+        <Pane fx:id="right" layoutX="595.0" layoutY="8.0" prefHeight="300.0" prefWidth="390.0" style="-fx-border-color: #D8BFD8;">
+        </Pane>
+        <Pane fx:id="web" layoutX="8.0" layoutY="320.0" prefHeight="500.0" prefWidth="980.0" style="-fx-border-color: #D8BFD8;">
+            <WebView fx:id="webView" layoutX="-1.0" layoutY="16.0" prefHeight="500.0" prefWidth="980.0" />
+        </Pane>
+    </children>
+</Pane>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.compare_db.controller.PostgreSqlConfigRightController" prefHeight="260.0" prefWidth="370.0">
+    <Label layoutX="10.0" layoutY="45.0" text="主机" />
+    <TextField fx:id="host" layoutX="80.0" layoutY="40.0" prefHeight="25.0" prefWidth="170.0" />
+    <Label layoutX="260.0" layoutY="40.0" text="端口" />
+    <TextField fx:id="port" layoutX="300.0" layoutY="40.0" prefHeight="25.0" prefWidth="60.0" />
+    <Label layoutX="10.0" layoutY="90.0" text="用户" />
+    <TextField fx:id="user" layoutX="80.0" layoutY="85.0" prefHeight="25.0" prefWidth="170.0" />
+    <Label layoutX="10.0" layoutY="135.0" text="密码" />
+    <PasswordField fx:id="password" layoutX="80.0" layoutY="130.0" prefHeight="25.0" prefWidth="170.0" />
+    <Label layoutX="10.0" layoutY="180.0" text="初始数据库" />
+    <TextField fx:id="initDataBase" layoutX="80.0" layoutY="175.0" prefHeight="25.0" prefWidth="170.0" />
+    <Button fx:id="connection" layoutX="300.0" layoutY="175.0" mnemonicParsing="false" onAction="#doConnection" text="连接" />
+    <Label layoutX="10.0" layoutY="225.0" text="选择数据库" />
+    <ComboBox fx:id="database" layoutX="80.0" layoutY="220.0" prefHeight="25.0" prefWidth="170.0"  onAction="#onChange" />
+</AnchorPane>

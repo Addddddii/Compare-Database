@@ -1,0 +1,5 @@
+javafx:
+  title: "Compare-Database(V1.0.0)"
+  appicons: "/static/icon.png"
+  stage:
+    resizable: true
